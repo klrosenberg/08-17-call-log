@@ -19,6 +19,14 @@
     <%= f.label :number %><br>
     <%= f.number_field :number %>
   </div>
+  <div class="field">
+    <%= f.label :last_call %>
+    <%= f.date_select :last_call%>
+  </div>
+  <div class="field">
+    <%= f.label :last_attempt %>
+    <%= f.date_select :last_attempt %>
+  </div>
   <div class="actions">
     <%= f.submit %>
   </div>
