@@ -1,6 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Response>
-  <!-- <Gather numDigits='1' action="/response"> -->
     <Say voice="man">Hello! Sumeet would like to talk with you. Do you have time today? Press one for yes or two for no.</Say>
-  <!-- </Gather> -->
 </Response>

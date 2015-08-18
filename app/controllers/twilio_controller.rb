@@ -5,7 +5,7 @@ class TwilioController < ApplicationController
     client.calls.create(
     from: '+1' + ENV['acct_num'],
     to: '+1' + number,
-    url: 'https://www.dropbox.com/home?preview=twilio.xml'
+    url: 'http://cl.ly/code/0f0c1s0h1F1W?_ga=1.59697326.2046014571.1436368265'
     )
   end
   
@@ -14,6 +14,6 @@ class TwilioController < ApplicationController
     call(contact.number) 
     contact.last_attempt = DateTime.now.strftime("%Y-%m-%d")
     contact.save
-    return contact.name
+    render :text => contact.name
   end
 end

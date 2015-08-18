@@ -2,10 +2,6 @@ Rails.application.routes.draw do
   
   root 'people#index'
   
-  post 'twilio/voice' => 'twilio#voice'
-  
-  post '/response' => 'people#response'
-  
   get '/make_call' => 'twilio#make_call'
   
   resources :people
