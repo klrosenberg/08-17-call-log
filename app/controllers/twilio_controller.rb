@@ -3,9 +3,9 @@ class TwilioController < ApplicationController
   def call(number)
     client = Person.set_client
     client.calls.create(
-    from: '+1' + acct_num,
+    from: '+1' + ENV['acct_num'],
     to: '+1' + number,
-    url: 'twilio.xml'
+    url: 'https://www.dropbox.com/home?preview=twilio.xml'
     )
   end
   
