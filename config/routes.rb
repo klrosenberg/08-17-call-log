@@ -2,6 +2,12 @@ Rails.application.routes.draw do
   
   root 'people#index'
   
+  post 'twilio/voice' => 'twilio#voice'
+  
+  post '/response' => 'people#response'
+  
+  get '/make_call' => 'twilio#make_call'
+  
   resources :people
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
