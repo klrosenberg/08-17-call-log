@@ -5,7 +5,7 @@ class TwilioController < ApplicationController
     client.calls.create(
     from: '+1' + ENV['acct_num'],
     to: '+1' + number,
-    url: 'http://cl.ly/code/0f0c1s0h1F1W?_ga=1.59697326.2046014571.1436368265'
+    url: 'http://f.cl.ly/items/3z3W2A3c2R0y0q0W2u2C/twilio.xml'
     )
   end
   
