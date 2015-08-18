@@ -9,6 +9,6 @@ class Person < ActiveRecord::Base
   end
   
   def self.least_recent_contact
-    Person.where.not(last_attempt: '2015-08-17').order("last_call ASC").first
+    Person.where.not(last_attempt: DateTime.now.strftime("%Y-%m-%d")).order("last_call ASC").first
   end
 end
