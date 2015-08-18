@@ -14,5 +14,6 @@ class TwilioController < ApplicationController
     call(contact.number) 
     contact.last_attempt = DateTime.now.strftime("%Y-%m-%d")
     contact.save
+    return contact.name
   end
 end
